@@ -49,6 +49,7 @@ export default {
     moviesData.movies()
     .then(response => {
       this.movies = response.data
+      console.log(response);
     }).catch(ex =>{
       console.log('err', ex)
       this.movies = []
