@@ -23,6 +23,7 @@ var moviesData = [
 // app.use(cors());
 
 router.get('/', function(req, res, next) {
+  console.log('test',moviesData)
   res.json(moviesData)
 });
 
